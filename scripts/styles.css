@@ -1,0 +1,108 @@
+/* Reset CSS */
+body, h1, h2, h3, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #000; /* Black */
+    color: #9c27b0; /* Vibrant Purple */
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+header {
+    background-color: #333; /* Dark Gray */
+    color: #fff; /* White */
+    padding: 20px 0;
+    text-align: center;
+}
+
+h1 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #fff; /* White */
+}
+
+#search-container {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#search-input {
+    padding: 8px;
+    width: 200px;
+    border-radius: 5px;
+    border: 1px solid #9c27b0; /* Vibrant Purple */
+    background-color: #333; /* Dark Gray */
+    color: #fff; /* White */
+}
+
+#search-button {
+    padding: 8px 15px;
+    border: none;
+    background-color: #9c27b0; /* Vibrant Purple */
+    color: #fff; /* White */
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+nav {
+    background-color: #333; /* Dark Gray */
+    border-bottom: 1px solid #9c27b0; /* Vibrant Purple */
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #9c27b0; /* Vibrant Purple */
+    font-weight: bold;
+}
+
+main {
+    padding: 20px 0;
+}
+
+footer {
+    background-color: #333; /* Dark Gray */
+    border-top: 1px solid #9c27b0; /* Vibrant Purple */
+    padding: 20px 0;
+    text-align: center;
+}
+
+#menu-toggle {
+    display: none;
+}
+
+/* Rest of your CSS */
+
+@keyframes moveBoat {
+    0% {
+        transform: translateX(-200%);
+    }
+    100% {
+        transform: translateX(100%);
+    }
+}
+
+.boat {
+    position: absolute;
+    top: 20px; /* Adjust the vertical position */
+    left: -200px; /* Adjust the starting horizontal position */
+    animation: moveBoat 5s linear forwards; /* Adjust animation duration */
+}
+
